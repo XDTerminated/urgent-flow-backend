@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "src": "mybedrockproject/wsgi.py",
+            "src": "backend/wsgi.py",
             "use": "@vercel/python",
             "config": { "maxLambdaSize": "15mb", "runtime": "python3.12" }
         }
@@ -14,7 +14,7 @@
                 "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
                 "Access-Control-Allow-Headers": "Content-Type"
             },
-            "dest": "mybedrockproject/wsgi.py"
+            "dest": "backend/wsgi.py"
         },
         {
             "src": "/(.*)",
